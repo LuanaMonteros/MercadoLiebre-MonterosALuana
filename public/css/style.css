@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Body generalizado */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ebebeb;
+}
+/* ----------------------------------------------------------------- */
+/* header generalizado */
+header {
+  background-color: #eac926;
+  padding: 15px;
+}
+header .top-header{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+header ul li {
+  list-style-type: none;
+}
+header ul li a {
+  text-decoration: none;
+  color: #000;
+}
+.search-bar {
+  width: 100%;
+  padding: 10px;
+}
+
+.search-bar input {
+  width: 90%;
+  background-color: #ebebeb;;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 40px;
+  font-size: 14px;
+  background-image: url(https://cdn2.hubspot.net/hubfs/4004166/bioticresearch_website_assets/images/search_icon.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-left: 10px;
+  padding-right: 30px;
+  background-color: #fff;
+  border: 1px solid #000;
+  box-shadow: none;
+}
+
+/* ----------------------------------------------------------------- */
+/* main generalizado */
+main {
+  flex-wrap: wrap;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+/* Box productos generalizados */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* caracteristicas truck y descuentos */
+main section article i,
+.descuentos {
+  color: #39b54a;
+}
+/* ----------------------------------------------------------------- */
+/* footer generalizado */
+footer {
+  background-color: #fff;
+  padding-top: 40px;
+}
+footer article i {
+  color: #0044aa;
+  margin-bottom: 10px;
+  font-size: 2em;
+}
+footer h3{
+  color: #666;
+}
+footer article p {
+  text-align: center;
+  margin: 0px 20px 20px 20px;
+  color: #666;
+}
+
+/* ----------------------------------------------------------------- */
+/* img generalizado */
+
+.logo-mercado-liebre img{
+  width: 100%;
+}
+
+img{
+  width: 100%;
+}
+/* ----------------------------------------------------------------- */
+/* Font size */
+p {
+  font-size: 12px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #666;
+  margin: 20px 0px;
+}
+.precios {
+  font-size: 18px;
+  width: 30%;
+}
+.descuentos {
+  font-size: 16px;
+  width: 70%;
+}
+.description {
+  font-size: 16px;
+  color: #666;
+  margin-top: 20px;
+}
+/* ----------------------------------------------------------------- */
+/* REGISTRO */
+#registro-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5%;
+  width: 100%;
+}
+#registro-form label{
+  padding: 5px;
+}
+#registro-form input{
+  margin-bottom: 5%;
+  padding: 8px;
+  border:#ebebeb 1px;
+  border-radius: 5px;
+}
+
+#registro-form #perfilUsuario-form{
+  display: block;
+}
+#registro-form #perfilUsuario-form input{
+margin: 0 10px 0 5px;
+}
+#registro-form #categorias-form{
+  display: flex;
+  flex-direction: column;
+}
+#registro-form #categorias-form label{
+  margin-top:10px;
+}
+#registro-form #categorias-form div input{
+  margin-right: 15%;
+}
+
+#registro-form #button-form{
+  display: block;
+}
+#registro-form #button-form button{
+  padding: 1%;
+  width: 30%;
+  border-radius: 5px;
+}
+
+/* LOGIN */
+#login{
+  width: 80%;
+  padding: 5%;
+}
+
+#form-login{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
+#form-login input{
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #666;
+  margin: 15px;
+}
+
+#form-login button{
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #0044aa;
+  color: #fff;
+} 
+
+#form-login button{
+  margin-top:2em;
+}
+
+/* ----------------------------------------------------------------- */
+
+/* MAQUETADO PARA MOBILE */
+  
+  .logo-mercado-liebre, .search-bar{
+    width: 50%;
+    margin: auto;
+  }
+  
+  .top-header p{
+    padding: 10px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+  }
+  /* Burguer menu */
+  header ul {
+    display: none;
+  }
+  div.burger-menu {
+    text-align: center;
+  }
+  div.burger-menu i {
+    background-color: #0044aa;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 2em;
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  .art-products {
+    margin: 10px;
+    background-color: white;
+    border: 1px solid #ebebeb;
+    padding: 15px;
+  }
+  /*pendiente camioncito*/
+  /*main .products .art-products i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 40px;
+  }*/
+  .description {
+    display: none;
+  }
+  footer h3 {
+    font-size: 16px;
+  }
+  .art-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+/* ----------------------------------------------------------------- */
+/* MAQUETADO PARA TABLET */ 
+
+@media (min-width: 361px) {
+  
+  .logo-mercado-liebre, .search-bar, .top-header p{
+    width: 25%;
+    justify-content: space-around;
+  }
+
+  nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  nav ul{
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav ul li{
+    padding: 7px;
+  }
+  div.burger-menu {
+    display: none;
+  }
+  
+  main .products {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .art-products:hover .description{
+    display: block;    
+  }
+  .art-products:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  .art-products{
+    width: 40%;
+  }
+  .art-products i:hover{
+    transform: rotate(-90deg);
+}
+
+#form-login button:hover{
+  background-color: #0022AA;
+}
+footer i:hover{
+  color:#eac926;
+}
+}
+@media (min-width: 769px) {
+.art-products {
+    width: 22%;
+}
+footer .secc-footer{
+  display: flex;
+  flex-direction: row;
+}  
+}
